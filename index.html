@@ -9,41 +9,42 @@
 </head>
 <body>
 <h1>Welcome to Om Belote's component library </h1>  
-<p class = "para">I am attending tanays neogcamp to make a library which will make my projects look good</p> 
+<p>I am attending tanays neogcamp to make a library which will make my projects look good</p> 
 <hr>
-<h1 id="Only">@Typography</h1>
-<small class="para">This is really small text</small>
-
+<h1>@Typography</h1>
+<small>This is really small text</small>
+<p>this is a <strong>bold </strong>text</p>
 <hr>
 <h2>@Container</h2>
 
 <h3>Fluid Container</h3>
-<div class = "para">This is a fluid container and it will go till the end of the page</div>
+<div class = "container container-fluid">This is a fluid container and it will go till the end of the page</div>
 
 <h3>Centered Container</h3>
-<div class = "para">This is a Centered container and it will go till a specified location on the page <div>
+<div class ='container container-center'>This is a Centered container and it will go till a specified location on the page </div>
 
 <hr>
 
 <h2>@Links</h2>
-<a href="/">Primary link</a>
-<a href="/">Secondary Link</a>
+<a class = 'link primary-link' href="/">Primary link</a>
+<a class = 'link secondary-link' href="/">Secondary Link</a>
 <hr>
 <h2>@Lists</h2>
 <h3>Here Is my Unordered list<h3>
-    <ul>
+    <p>this list will not have any bullet</p>
+    <ul class= 'non-bullet'>
         <li>Item_One</li>
         <li>Item_Two</li>
         <li>Item_Three</li>
     </ul>
 <h3>Unordered inline List</h3>
-    <ul>
-        <li>Inline Item one</li>
-        <li>Inline Item Two</li>
-        <li>Inline Item Three</li>
+    <ul class = 'non-bullet'>
+        <li class = 'list-item-inline'>Inline Item one</li>
+        <li class = 'list-item-inline'>Inline Item Two</li>
+        <li class = 'list-item-inline'>Inline Item Three</li>
     </ul>
 <h3>Unordered inline List</h3>
-    <ol>
+    <ol reversed>
         <li>Item one</li>
         <li>Item Two</li>
         <li>Item Three</li>
@@ -51,50 +52,56 @@
 
 <hr>
 <h2>@nav</h2>
-<nav>
-    <div>IamBrand</div>
-    <ul>
-        <li>
-            <a href="/">home</a>
+<nav class= 'navigation'>
+    <div class = 'nav-name'>IamBrand</div>
+    <ul class = 'non-bullet nav-pills'>
+        <li class = 'list-item-inline'>
+            <a class = 'link link-active' href="/">home</a>
         </li>
-        <li>
-            <a href="/">Products</a>
+        <li class = 'list-item-inline'>
+            <a class = 'link' href="/">Products</a>
         </li>
-        <li>
-            <a href="/">About</a>
+        <li class = 'list-item-inline'>
+            <a class = 'link' href="/">About</a>
         </li>
     </ul>
 </nav>
 
 <hr>
-<header>
-    <img src = "Hero_image.svg">
-    <h1>Heading Inside hero</h1>
+<header class= 'hero'>
+    <img class = 'hero-img' src = "Hero_image.svg">
+    <h1 class ="hero-heading">Om Belote the <span class="heading-inverted">web Developer</span></h1>
 </header>
 <! -- Use undraw illustrations to download free illustrations
 and use tailwind to find good colours-->
 
 <hr>
 <h2>@Section</h2>
-<section>
-    <h3>White Background</h3>
+<section class = 'section'>
+    <div class = 'container container-center'>
+    <h1>White Background</h1>
     <p>This section will have white background</p>
+</div>
 </section>
 
-<section>
-    <h3>Off White Background</h3>
+<section class = 'section ow'>
+    <div class = 'container container-center'>
+    <h1>Off White Background</h1>
     <p>This section will have gray background</p>
+</div>
 </section>
 
 <hr>
 <h2>@footer</h2>
-<div>Some small heading inside footer</div>
-<ul>
-    <li>Item_One</li>
-    <li>Item_Two</li>
-    <li>Item_Three</li>
+<footer class='footer'>
+<div class='footer-header'>Some small heading inside footer</div>
+<ul class="social-links non-bullet">
+    <li class='list-item-inline'><a class = "link" href="/">Social_One </a></li>
+    <li class='list-item-inline'><a class = "link" href="/">Social_Two </a></li>
+    <li class='list-item-inline'><a class = "link" href="/">Social_Three </a></li>
 </ul>
+</footer>
 
-</section>
+
 </body>
 </html>

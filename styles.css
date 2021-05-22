@@ -1,12 +1,134 @@
-body {
-    color: blueviolet;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Css variable */
+:root{
+    --primary-color: red;
+    --bg-color: rgb(132, 0, 255);
+    --dark-gray: rgb(102, 102, 102);
+    --off-white: #F3F4F6;
 }
-h1{
-    color: rgb(23, 0, 128);
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    /* because chrome had assigned 1px margin  */
 }
-.para{
-    color: green;
+
+hr{
+    margin: 2rem 0rem;
 }
-#Only{
-    color: gray;
+
+/* container */
+.container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+/* rem is a css unit */
+
+.container-center{
+    margin: auto;
+    max-width: 600px;
+}
+
+/* links */
+
+.link{
+    text-decoration: none;
+    padding: 0.5rem 1rem
+}
+/* look into BEM naming convention
+for css */
+.primary-link{
+    /* color: var(--bg-color); */
+    border-radius: 0.5rem;
+    background-color: var(--bg-color);
+    border: 1px solid var(--bg-color);
+    color: white;
+}
+
+.secondary-link{
+    /* color: var(--bg-color); */
+    border-radius: 0.5rem;
+    border: 1px solid var(--bg-color);
+}
+
+
+.non-bullet{
+    list-style: none;
+}
+
+.list-item-inline{
+    display: inline;
+    margin: 0rem 0.5rem
+}
+
+.navigation{
+    background-color: var(--bg-color);
+    color: white;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+
+/* it will check for link class in navigation */
+.navigation .link{
+    color: white;
+}
+.navigation .nav-pills{
+    text-align: right;
+}
+
+.navigation .nav-name{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navigation .link-active{
+    font-weight: bold;
+}
+
+.hero{
+    padding: 2rem;
+}
+
+.hero-img{
+    margin:auto;
+    max-width: 350px;
+    display: block;
+}
+
+.hero .hero-heading{
+    color: var(--dark-gray)
+}
+.hero .hero-heading 
+.heading-inverted{
+                color: var(--bg-color);
+}
+
+.section{
+    padding: 2rem;
+}
+.section h1{
+    text-align: center;
+
+}
+
+.ow{
+    background-color: var(--off-white);
+}
+
+/* footer */
+.footer{
+    background-color: var(--bg-color);
+    text-align: center;
+    color:white;
+    padding: 2rem 1rem;
+    border-top-right-radius: 1rem;
+}
+.footer .link{
+    color:white;
+}
+/* because my google chrome had the predefined attribute  */
+.footer ul{
+    padding-inline-start: 0px;
 }
